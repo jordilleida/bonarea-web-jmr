@@ -27,9 +27,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/sweetalert2/dist/sweetalert2.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -68,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "hello-world-bonarea:build:production"
+              "browserTarget": "bonarea-web-jmr:build:production"
             },
             "development": {
-              "browserTarget": "hello-world-bonarea:build:development"
+              "browserTarget": "bonarea-web-jmr:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hello-world-bonarea:build"
+            "browserTarget": "bonarea-web-jmr:build"
           }
         },
         "test": {
@@ -102,5 +108,5 @@
       }
     }
   },
-  "defaultProject": "hello-world-bonarea"
+  "defaultProject": "bonarea-web-jmr"
 }

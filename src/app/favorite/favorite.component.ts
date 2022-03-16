@@ -13,6 +13,7 @@ export class FavoriteComponent implements OnInit {
   ngOnInit(): void {
     console.log('This is init method');
   }
+
   simpleAlert(){
     Swal.fire('Hello world!');
   }
